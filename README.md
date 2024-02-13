@@ -217,5 +217,5 @@
    - **ToLocationID**: Unique identifier for each energy end location.
 
 ### Relationships between Datasets
-   - these datasets can be linked based on common attributes such as location, month, and year to analyze the interplay between energy consumption, production, infrastructure, and grid transmission.
+   these datasets are linked based on common attribute locationId to analyze the interplay between energy consumption, production, infrastructure, and grid transmission.
 
