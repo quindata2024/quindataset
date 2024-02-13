@@ -219,3 +219,98 @@
 ### Relationships between Datasets
    these datasets are linked based on common attribute locationId to analyze the interplay between energy consumption, production, infrastructure, and grid transmission.
 
+
+# ERD SCHEMAS 
+
+graph LR
+    subgraph TELECOM
+        A[Customers] --> B(line_id) | Mobile Lines
+        B --> C(call_id) | Calls
+        A --> B
+        B --> C
+        C[call_id] || calling_line_id | called_line_id
+        B[line_id] || customer_id | number | activation_date
+        A[Customers] || name | phone_number | address | plan
+        C[call_id] || start_time | duration
+        subgraph Data Usage
+            D[Data Usage] --> B
+            D[Data Usage] || usage_id | line_id | usage_date | data_amount
+            B[line_id] || sender_line_id | recipient_line_id
+        end
+    end
+
+    subgraph EDUCATION
+        E[Students] --> F[enrollment_id] | Enrollments | semester
+        F --> G[Courses] | Courses
+        E --> F
+        G --> F
+        F[enrollment_id] || student_id | course_id
+        E[Students] || student_id | name | age | grade_level
+        G[Courses] || course_id | name | subject
+        F[enrollment_id] || enrollment_id (PK)
+    end
+
+    subgraph E-COMMERCE
+        H[Customers] --> I[order_id] | Orders | order_date
+        I --> J[Products] | Products
+        H --> I
+        J --> I
+        I[order_id] || order_id (PK) | customer_id | product_id | quantity
+        H[Customers] || customer_id (PK) | name | email | phone_number | address
+        J[Products] || product_id(PK) | name | category | description | price
+        subgraph Order Detail
+            I --> J
+            I[order_id] || order_id (FK)
+            J[Products] || product_id (FK)
+        end
+    end
+
+    subgraph ENERGY
+        K[Energy Consumption] --> L[LocationID] | Location
+        K --> M[Energy Production] | Location
+        L --> N[Energy Infrastructure] | Location
+        M --> N | Location
+        N --> O[Energy Grid] | FromLocationID | ToLocationID
+        O --> P[Energy Infrastructure] | Location
+        K[Energy Consumption] || ConsumerID (PK) | Location | Usage_KWh | Month | Year
+        L[LocationID] || Address | City | State | ZipCode
+        M[Energy Production] || ProductionID (PK) | Production_KWh | Month | Year
+        N[Energy Infrastructure] || FacilityID (PK) | Type | Capacity_MW
+        O[Energy Grid] || GridID (PK) | From | To | Distance_km | Capacity_MW
+    end
+
+    subgraph FINANCE
+        Q[Customers] --> R[account_id] | Accounts
+        R --> S[Transactions] | Transactions
+        Q --> R
+        R --> S
+        S[Transactions] || transaction_id (PK) | account_id | transaction_type | amount | date
+        Q[Customers] || customer_id (PK) | name | address | phone_number | email | social_security_nb
+        R[account_id] || account_id (PK) | account_type | balance
+        subgraph Investments
+            R --> T[Investments]
+            R[account_id] || account_id (FK)
+            T[Investments] || investment_id (PK) | symbol | shares | purchase_price | current_price
+        end
+    end
+
+    subgraph GOVERNMENT
+        U[Addresses] --> V[CitizenID] | Citizens
+        V --> W[Taxes] | Taxes
+        U --> V
+        W --> V
+        V[CitizenID] || CitizenID(PK) | Name | Age
+        U[Addresses] || AddressID (PK) | Address | City | State | ZipCode
+        W[Taxes] || TaxID (PK) | Year | Amount
+    end
+
+    subgraph HEALTHCARE
+        X[patients] --> Y[diagnoses] | diagnoses_code | description
+        X --> Z[prescriptions] | medications | dosage | instructions
+        X --> AA[treatments] | procedures | provider | date
+        Y --> AA
+        Z --> AA
+        X[patients] || patient_id (PK) | name | address | phone_number | email | birth_date
+        Y[diagnoses] || diagnosis_
+
+
