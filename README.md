@@ -222,95 +222,255 @@
 
 # ERD SCHEMAS 
 
-graph LR
-    subgraph TELECOM
-        A[Customers] --> B(line_id) | Mobile Lines
-        B --> C(call_id) | Calls
-        A --> B
-        B --> C
-        C[call_id] || calling_line_id | called_line_id
-        B[line_id] || customer_id | number | activation_date
-        A[Customers] || name | phone_number | address | plan
-        C[call_id] || start_time | duration
-        subgraph Data Usage
-            D[Data Usage] --> B
-            D[Data Usage] || usage_id | line_id | usage_date | data_amount
-            B[line_id] || sender_line_id | recipient_line_id
-        end
-    end
 
-    subgraph EDUCATION
-        E[Students] --> F[enrollment_id] | Enrollments | semester
-        F --> G[Courses] | Courses
-        E --> F
-        G --> F
-        F[enrollment_id] || student_id | course_id
-        E[Students] || student_id | name | age | grade_level
-        G[Courses] || course_id | name | subject
-        F[enrollment_id] || enrollment_id (PK)
-    end
+TELECOM
 
-    subgraph E-COMMERCE
-        H[Customers] --> I[order_id] | Orders | order_date
-        I --> J[Products] | Products
-        H --> I
-        J --> I
-        I[order_id] || order_id (PK) | customer_id | product_id | quantity
-        H[Customers] || customer_id (PK) | name | email | phone_number | address
-        J[Products] || product_id(PK) | name | category | description | price
-        subgraph Order Detail
-            I --> J
-            I[order_id] || order_id (FK)
-            J[Products] || product_id (FK)
-        end
-    end
-
-    subgraph ENERGY
-        K[Energy Consumption] --> L[LocationID] | Location
-        K --> M[Energy Production] | Location
-        L --> N[Energy Infrastructure] | Location
-        M --> N | Location
-        N --> O[Energy Grid] | FromLocationID | ToLocationID
-        O --> P[Energy Infrastructure] | Location
-        K[Energy Consumption] || ConsumerID (PK) | Location | Usage_KWh | Month | Year
-        L[LocationID] || Address | City | State | ZipCode
-        M[Energy Production] || ProductionID (PK) | Production_KWh | Month | Year
-        N[Energy Infrastructure] || FacilityID (PK) | Type | Capacity_MW
-        O[Energy Grid] || GridID (PK) | From | To | Distance_km | Capacity_MW
-    end
-
-    subgraph FINANCE
-        Q[Customers] --> R[account_id] | Accounts
-        R --> S[Transactions] | Transactions
-        Q --> R
-        R --> S
-        S[Transactions] || transaction_id (PK) | account_id | transaction_type | amount | date
-        Q[Customers] || customer_id (PK) | name | address | phone_number | email | social_security_nb
-        R[account_id] || account_id (PK) | account_type | balance
-        subgraph Investments
-            R --> T[Investments]
-            R[account_id] || account_id (FK)
-            T[Investments] || investment_id (PK) | symbol | shares | purchase_price | current_price
-        end
-    end
-
-    subgraph GOVERNMENT
-        U[Addresses] --> V[CitizenID] | Citizens
-        V --> W[Taxes] | Taxes
-        U --> V
-        W --> V
-        V[CitizenID] || CitizenID(PK) | Name | Age
-        U[Addresses] || AddressID (PK) | Address | City | State | ZipCode
-        W[Taxes] || TaxID (PK) | Year | Amount
-    end
-
-    subgraph HEALTHCARE
-        X[patients] --> Y[diagnoses] | diagnoses_code | description
-        X --> Z[prescriptions] | medications | dosage | instructions
-        X --> AA[treatments] | procedures | provider | date
-        Y --> AA
-        Z --> AA
-        X[patients] || patient_id (PK) | name | address | phone_number | email | birth_date
-        Y[diagnoses] || diagnosis_
+		+-----------------------+          +----------------------+          +------------------+
+		|       Customers       | -------> |     Mobile Lines     | <------  |       Calls      |
+		+-----------------------+          +----------------------+          +------------------+
+		| customer_id (PK)      |          | line_id (PK)         |          | call_id (PK)     |
+		| name                  |          | customer_id (FK)     |          | calling_line_id (FK)  
+		| phone_number          |          | number               |          | called_line_id  (FK)
+		| address               |          | activation_date      |          | start_time       |
+		| plan                  |          +----------------------+          | duration         |
+		+-----------------------+                  ^      ^                  +------------------+
+		                                           |      |
+		    +--------------------------------------+      |
+		    |                                             |
+		+-----------------------+          +----------------------+          
+		|       Data Usage      |          |         SMS          |          
+		+-----------------------+          +----------------------+          
+		| usage_id (PK)         |          | sender_line_id (PK)  |          
+		| line_id (FK)          |          | recipient_line_id (FK)          
+		| usage_date            |          | send_time            |          
+		| data_amount           |          | content              |          
+		+-----------------------+          +----------------------+  
 
 
+EDUCATION
+
+		+---------------------+         +-------------+          +-------------+
+		|      Students       |         |   Grades    |          |   Courses   |
+		+---------------------+         +-------------+          +-------------+
+		| student_id (PK)     |  -----> |enrollment_id(PK) <-----| course_id (PK) 
+		| name                |         | student_id (FK)        | name        |
+		| age                 |         | course_id (FK)         | subject     |
+		| grade_level         |         | grade        |         +-------------+
+		+---------------------+         +-------------+                	                                                                
+				                              ^                                  
+				                              |                                  
+				                              |
+				                              |                                  
+		                           +-----------------+
+		                           |   Enrollments   |
+		                           +-----------------+
+		                           | enrollment_id (PK)
+		                           | student_id (FK) |
+		                           | course_id  (FK) |
+		                           | semester        |
+		                           +-----------------+
+
+
+
+E-COMMERCE
+
+		+---------------------+        +-------------+        +-------------+
+		|      Customers      |        |    Orders   |        |   Products  |
+		+---------------------+        +-------------+        +-------------+
+		| customer_id (PK)    |        | order_id (PK)        | product_id(PK)
+		| name                |  --->  | customer_id(FK)      | name        |
+		| email               |        | order_date  |        | category    |
+		| phone_number        |        +-------------+        | description |
+		| address             |                ^              | price       |
+		+---------------------+                |              +-------------+
+		                              +-------------+             ^
+		                              | Order Detail|             |
+		                              +-------------+             |
+		                              | order_id (FK)  -----------+
+		                              | product_id (FK) 
+		                              | quantity    |
+		                              +-------------+
+
+
+
+
+
+ENERGY
+
+		+-------------------------+           +-------------------------+
+		|    Energy Consumption   |           |    Energy Production    |
+		+-------------------------+           +-------------------------+
+		| ConsumerID (PK)         |           | ProductionID (PK)       |
+		| LocationID (FK)         |           | LocationID (FK)         |
+		| Location                | --------->| Location                |
+		| Usage_KWh               |           | Production_KWh          |
+		| Month                   |           | Month                   |
+		| Year                    |           | Year                    |
+		+-------------------------+           +-------------------------+
+		            |                                   |
+		            |                                   |
+		            |                                   |
+		            v                                   v
+		+-------------------------+           +-------------------------+
+		|  Energy Infrastructure  |           |       Energy Grid       |
+		+-------------------------+           +-------------------------+
+		| FacilityID (PK)         |           | GridID (PK)             |
+		| Location                | --------->| From                    |
+		| Type                    |           | To                      |
+		| Capacity_MW             |           | FromLocationID (FK)     |
+		| LocationID (FK)         |           | Distance_km             |
+		+-------------------------+           | Capacity_MW             |
+		                                      | ToLocationID (FK)       |
+		                                       +------------------------+
+
+                                
+
+
+FINANCE
+
+		+---------------------+          +---------------+          +--------------+
+		|      Customers      |          |    Accounts   |          | Transactions |
+		+---------------------+          +---------------+          +--------------+
+		| customer_id (PK)    |          | account_id (PK)          |transaction_id (PK)
+		| name                | -------> | customer_id (FK) <-------| account_id (FK)
+		| address             |          | account_type  |          | transaction_type 
+		| phone_number        |          | balance       |          | amount       |
+		| email               |          |               |          | date         |
+		| social_security_nb  |          +---------------+          +--------------+
+		+---------------------+                 ^               
+		                                        |              
+		                                        |             
+		                                        |
+		                                        |            
+		                                +--------------+
+		                                |  Investments |
+		                                +--------------+
+		                                | investment_id (PK)
+		                                | account_id (FK)
+		                                | symbol       |
+		                                | shares       |
+		                                | purchase_price 
+		                                | current_price| 
+		                                +--------------+
+
+
+
+
+GOVERNMENT
+
+		+---------------------+        +--------------+        +---------------------+
+		|      Addresses      |        |   Citizens   |        |        Taxes        |
+		+---------------------+        +--------------+        +---------------------+
+		| AddressID (PK)      |        | CitizenID(PK)|        | TaxID (PK)          |
+		| Address             | -----> | Name         | <----- | Year                |
+		| City                |        | Age          |        | Amount              |
+		| State               |        | AddressID (FK)        +---------------------+
+		| ZipCode             |        | TaxID (FK)   |
+		+---------------------+        +--------------+
+
+
+
+
+HEALTHCARE
+
+		+-----------------+                  +-----------------+
+		|   patients      |                  |   diagnoses     |
+		+-----------------+                  +-----------------+
+		|  patient_id (PK)|                  |  diagnosis_id (PK)
+		|  name           |                  |  diagnosis_code |
+		|  address        |                  |  description    |
+		|  phone_number   |  ----------+     +-----------------+
+		|  email          |            |
+		|  birth_date     |			   |				|
+		+-----------------+            |				|    
+		         |                     |                |
+		         |                     |                |
+		         v                     |                v
+		+-----------------+            |     +-----------------+
+		| prescriptions   |            |     |   treatments    |
+		+-----------------+            +---> +-----------------+
+		|  prescription_id (PK)              |  treatment_id (PK)
+		|  patient_id (FK)|                  |  patient_id (FK)|
+		|  medication     |                  |  diagnosis_id (FK)
+		|  dosage         |                  |  procedure      |
+		|  instructions   |                  |  provider       |
+		+-----------------+                  |  date           |
+		                                     +-----------------+
+
+
+
+
+HUMAN RESSOURCE
+
+		+-------------+         +--------------+         +-----------------+
+		|  salaries   |         |  employees   |         |   benefits      |
+		+-------------+         +--------------+         +-----------------+
+		|  salary_id (PK)  ---->|employee_id (PK) <------|   benefit_id (PK)
+		|  employee_id (FK)     |  first_name  |         |   employee_id (FK)
+		|  start_date |         |  last_name   |         |   health_plan   |
+		|  current_salary       |  email       |         |   enrolled      |
+		+-------------+         |  job_title   |         +-----------------+
+		                        |  hire_date   |
+		                        |  address     |
+		                        |  phone_number|
+		                        +--------------+
+		                              ^
+		                              |
+		                              |
+		                     +------------------+
+		                     |   departments    |
+		                     +------------------+
+		                     |  department_id (PK)
+		                     |       name       |
+		                     |     location     |
+		                     |   manager_id (FK)|
+		                     +------------------+
+
+
+
+
+REAL STATE
+
+		+-------------------+      +-------------------+      +-------------------+
+		|    Properties     |      |     Listings      |      |   Transactions    |
+		+-------------------+      +-------------------+      +-------------------+
+		|  property_id (PK) | ---->|  listing_id (PK)  |<-----|  transaction_id (PK) 
+		|  type             |      |  property_id (FK) |      |  listing_id (FK)  |
+		|  address          |      |  list_date        |      |  sale_date        |
+		|  city             |      |  status           |      |  sale_price       |
+		|  state            |      |  list_price       |      |  buyer_name       |
+		|  zip_code         |      |  listing_agent    |      |  seller_name      |
+		|  bedrooms         |      |  description      |      +-------------------+
+		|  bathrooms        |      +-------------------+  
+		|  square_footage   |                              
+		|  year_built       |                              
+		|  price            |                              
+		+-------------------+ 
+
+
+
+ 
+
+TRANSPORTATION
+
+		+-------------+           +-------------+           +-------------+
+		|   Vehicles  | ------->  |   Trips     |  <--------|  Passengers |
+		+-------------+           +-------------+           +-------------+
+		| vehicle_id (PK)         | trip_id (PK)|           | passenger_id (PK)
+		| type        |           | origin_loc._id (FK)     | trip_id (FK)|
+		| capacity    |           | destin_loc._id (FK)     | name        |
+		| model       |           | vehicle_id  |           | age         |
+		+-------------+           | start_date  |           | origin      |
+		                          +-------------+           +-------------+
+		                                ^
+		                                |
+		                                |
+		+-------------+                 |
+		|  Locations  | ----------------+
+		+-------------+  
+		| location_id (PK)  
+		| name        |  
+		| country     |  
+		| latitude    |  
+		| longitude   |  
+		+-------------+ 
