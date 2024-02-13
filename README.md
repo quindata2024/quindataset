@@ -190,6 +190,7 @@
    - **Usage_KWh**: Amount of energy consumed in kilowatt-hours (KWh).
    - **Month**: Month of the recorded energy consumption.
    - **Year**: Year of the recorded energy consumption.
+   - **LocationID**: Unique identifier for each energy location.
 
 ## 2. Energy Production Dataset
    - **ProductionID**: Unique identifier for each energy production entry.
@@ -197,12 +198,14 @@
    - **Production_KWh**: Amount of energy produced in kilowatt-hours (KWh).
    - **Month**: Month of the recorded energy production.
    - **Year**: Year of the recorded energy production.
+   - **LocationID**: Unique identifier for each energy location.
 
 ## 3. Energy Infrastructure Dataset
    - **FacilityID**: Unique identifier for each energy infrastructure facility.
    - **Location**: Location of the energy infrastructure facility.
    - **Type**: Type of energy infrastructure (e.g., Solar, Wind, Hydro, Nuclear).
    - **Capacity_MW**: Capacity of the energy infrastructure facility in megawatts (MW).
+   - **LocationID**: Unique identifier for each energy location.
 
 ## 4. Energy Grid Dataset
    - **GridID**: Unique identifier for each energy grid entry.
@@ -210,6 +213,8 @@
    - **To**: Destination location of the energy transmission grid.
    - **Distance_km**: Distance between the starting and destination locations in kilometers (km).
    - **Capacity_MW**: Capacity of the energy transmission grid in megawatts (MW).
+   - **FromLocationID**:Unique identifier for each energy depart location.
+   - **ToLocationID**: Unique identifier for each energy end location.
 
 ### Relationships between Datasets
    - these datasets can be linked based on common attributes such as location, month, and year to analyze the interplay between energy consumption, production, infrastructure, and grid transmission.
