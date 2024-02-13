@@ -381,8 +381,8 @@ HEALTHCARE
 		|  address        |                  |  description    |
 		|  phone_number   |  ----------+     +-----------------+
 		|  email          |            |
-		|  birth_date     |			   |				|
-		+-----------------+            |				|    
+		|  birth_date     |	       |		|
+		+-----------------+            |		|    
 		         |                     |                |
 		         |                     |                |
 		         v                     |                v
