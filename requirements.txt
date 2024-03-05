@@ -1,0 +1,5 @@
+# requirements.txt
+
+faker==23.2.0  # Library for generating fake data
+pandas==1.5.2  # Library for data manipulation and analysis
+numpy==1.23.5  # Library for numerical computations
