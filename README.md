@@ -1,3 +1,21 @@
+This project offers a comprehensive framework for generating realistic and diverse fake data sets targeted at specific domains such as ecommerce, transportation, finance, and beyond. It caters to the needs of developers and data scientists who require well-structured and customizable data for purposes such as testing, prototyping, and training models.
+
+The documentation is divided into two main sections:
+
+## Domain Descriptions:
+This section provides detailed descriptions of each domain, including the tables and their corresponding fields. It offers insights into the structure and composition of the datasets for better understanding and utilization.
+
+## Entity-Relationship Diagrams (ERD):
+The latter part of the documentation presents entity-relationship diagrams (ERDs) for each domain. These diagrams visually represent the relationships between different entities (tables) within the dataset, offering a graphical overview of the data model.
+
+The scripts included in the project are designed to be self-contained and easy to use. To generate data for a specific domain, follow these steps:
+### 1. Navigate to the "scripts" folder in the project directory.
+### 2. Locate the script file corresponding to the desired domain (e.g., "ecommerce.py", "transportation.py").
+### 3. Run the script file using a Python interpreter or any compatible runtime environment.
+### 4. Ensure that the necessary packages and dependencies are installed before executing the script to avoid any runtime errors.
+
+
+
 # E-commerce Datasets
 
 ## 1. Parent Tables
