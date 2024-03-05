@@ -1,0 +1,16 @@
+# Ignore virtual environment files
+.venv/
+env/
+venv/
+
+# Ignore temporary files and folders
+__pycache__/
+*.py[cod]
+
+# Ignore IDE specific files
+.idea/
+.vscode/
+
+
+# Ignore generated
+ quindataset/data/
