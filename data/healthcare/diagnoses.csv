@@ -1,0 +1,51 @@
+diagnosis_id,diagnosis_code,description
+D01,DC426,Common cold
+D02,DC672,Influenza (flu)
+D03,DC390,Asthma
+D04,DC459,Diabetes
+D05,DC620,Hypertension
+D06,DC318,Bronchitis
+D07,DC968,Pneumonia
+D08,DC587,Allergies
+D09,DC982,Arthritis
+D10,DC258,Osteoporosis
+D11,DC750,Migraine
+D12,DC177,Anxiety disorder
+D13,DC162,Depression
+D14,DC831,Gastroenteritis
+D15,DC435,Urinary tract infection (UTI)
+D16,DC332,Sinusitis
+D17,DC876,Conjunctivitis (pink eye)
+D18,DC835,Gastritis
+D19,DC821,Acid reflux
+D20,DC525,Peptic ulcer
+D21,DC501,Eczema
+D22,DC450,Psoriasis
+D23,DC865,Gout
+D24,DC657,Fibromyalgia
+D25,DC717,Chronic obstructive pulmonary disease (COPD)
+D26,DC783,Emphysema
+D27,DC585,Anemia
+D28,DC633,Hyperthyroidism
+D29,DC721,Hypothyroidism
+D30,DC694,Irritable bowel syndrome (IBS)
+D31,DC131,Crohn's disease
+D32,DC872,Ulcerative colitis
+D33,DC151,Hepatitis
+D34,DC288,Cirrhosis
+D35,DC218,Diverticulitis
+D36,DC751,Diverticulosis
+D37,DC142,Stroke
+D38,DC185,Heart attack
+D39,DC521,Atrial fibrillation
+D40,DC781,Angina
+D41,DC646,Chronic kidney disease
+D42,DC127,Urinary incontinence
+D43,DC736,Glaucoma
+D44,DC206,Cataracts
+D45,DC567,Macular degeneration
+D46,DC514,Menopause
+D47,DC756,Erectile dysfunction
+D48,DC716,Premenstrual syndrome (PMS)
+D49,DC842,Endometriosis
+D50,DC641,Polycystic ovary syndrome (PCOS)

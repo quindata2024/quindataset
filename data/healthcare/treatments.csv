@@ -1,0 +1,151 @@
+patient_id,treatment_id,diagnosis_id,procedure,provider,date
+P91,T01,D39,Physical therapy,Dr. Tyrone Williamson,2023-11-06
+P43,T02,D35,Surgery,Dr. Stephen Peterson,2023-08-13
+P14,T03,D03,Medication management,Dr. Kathryn Johnson,2023-08-27
+P34,T04,D47,Counseling,Dr. Brianna Thompson,2023-03-01
+P07,T05,D20,Diagnostic imaging,Dr. Jordan Aguilar,2024-01-31
+P48,T06,D25,Laboratory tests,Dr. Kristina Reed,2023-07-01
+P93,T07,D09,Rehabilitation,Dr. Benjamin Stark,2023-09-28
+P24,T08,D14,Chiropractic adjustment,Dr. Sara Kennedy,2024-01-22
+P42,T09,D02,Massage therapy,Dr. Jose Andrade,2023-12-04
+P02,T10,D23,Acupuncture,Dr. Sheri May,2024-01-30
+P45,T11,D09,Occupational therapy,Dr. Andrew Powers,2023-12-09
+P56,T12,D02,Speech therapy,Dr. Isabella Anderson,2023-05-12
+P20,T13,D11,Electroconvulsive therapy,Dr. Megan Allen,2023-03-11
+P35,T14,D48,Radiation therapy,Dr. Joseph Miller,2023-05-11
+P25,T15,D22,Chemotherapy,Dr. Austin Spencer,2024-01-24
+P59,T16,D34,Dialysis,Dr. Gregory Hill,2023-10-25
+P40,T17,D28,Cardiac catheterization,Dr. Robin Lamb,2024-01-26
+P39,T18,D31,Endoscopy,Dr. John Reed,2023-02-20
+P72,T19,D23,Colonoscopy,Dr. Ian Phillips,2024-02-06
+P20,T20,D22,Lumbar puncture,Dr. Erica Hill,2023-06-21
+P39,T21,D47,Biopsy,Dr. Kayla Garcia,2023-08-19
+P95,T22,D17,Joint injection,Dr. Courtney Gilbert,2023-06-23
+P80,T23,D17,Dental extraction,Dr. Kelly Thomas,2023-06-25
+P18,T24,D38,Root canal,Dr. Lindsey Roberts,2023-06-21
+P32,T25,D01,Eye surgery,Dr. Lucas Scott,2023-11-18
+P87,T26,D50,Plastic surgery,Dr. Maria Calderon,2023-04-14
+P30,T27,D38,Laser therapy,Dr. Jill Morris,2023-03-14
+P27,T28,D38,Blood transfusion,Dr. Regina Lee,2023-11-19
+P15,T29,D44,Bone marrow transplant,Dr. Nicholas Burnett,2024-02-08
+P03,T30,D43,Appendectomy,Dr. Patrick Griffin,2023-12-23
+P64,T31,D19,Hernia repair,Dr. Suzanne Turner,2023-11-10
+P94,T32,D28,Cesarean section,Dr. Dr. Briana Williams DVM,2023-06-17
+P62,T33,D10,Vasectomy,Dr. Edward Hanson,2023-04-19
+P12,T34,D17,Tonsillectomy,Dr. Amanda Merritt,2023-08-07
+P48,T35,D39,Appendectomy,Dr. Jason Miller,2024-01-18
+P93,T36,D22,Hysterectomy,Dr. Stephen Martin,2023-03-03
+P73,T37,D44,Arthroscopy,Dr. Zachary Gibson,2023-07-25
+P32,T38,D13,Angioplasty,Dr. Jared Monroe,2023-02-17
+P47,T39,D31,Coronary bypass,Dr. Heidi Lloyd,2023-12-09
+P53,T40,D11,Kidney transplant,Dr. Scott Duran,2023-07-16
+P72,T41,D05,Liver transplant,Dr. Kaitlin Bennett,2023-09-22
+P77,T42,D11,Lung transplant,Dr. Theresa Henry,2023-10-03
+P66,T43,D08,Orthopedic surgery,Dr. James Johnson,2024-01-25
+P88,T44,D06,Neurosurgery,Dr. Madison Herring,2023-08-25
+P05,T45,D14,Urological surgery,Dr. Dr. Natalie Baker,2023-08-16
+P62,T46,D43,Bariatric surgery,Dr. William Carlson,2023-10-22
+P83,T47,D05,Cataract surgery,Dr. James Rose,2023-06-14
+P75,T48,D07,Cosmetic surgery,Dr. Michael Powell,2023-04-10
+P84,T49,D40,Orthodontic treatment,Dr. Erica Flores,2023-06-21
+P45,T50,D06,general Dialysis,Dr. Philip Young,2023-05-28
+P44,T51,D43,follow Physical therapy,Dr. Stephen Chase III,2023-03-16
+P63,T52,D33,follow Surgery,Dr. Diane Morton,2023-06-16
+P61,T53,D50,follow Medication management,Dr. Jessica Hudson,2023-06-16
+P70,T54,D12,follow Counseling,Dr. Robert Day,2023-05-26
+P19,T55,D15,follow Diagnostic imaging,Dr. Joshua Madden,2023-11-26
+P12,T56,D18,follow Laboratory tests,Dr. Ryan Jones,2023-08-05
+P54,T57,D38,follow Rehabilitation,Dr. Lisa Blake,2023-11-26
+P74,T58,D11,follow Chiropractic adjustment,Dr. Brent Glover,2023-12-07
+P09,T59,D07,follow Massage therapy,Dr. Robert Morales,2023-10-12
+P83,T60,D43,follow Acupuncture,Dr. Brian Walker,2023-06-23
+P02,T61,D31,follow Occupational therapy,Dr. Eddie Smith,2023-11-25
+P47,T62,D30,follow Speech therapy,Dr. Joseph Braun,2023-08-07
+P11,T63,D50,follow Electroconvulsive therapy,Dr. Michael Woodward,2023-04-16
+P03,T64,D47,follow Radiation therapy,Dr. Jamie Jensen,2023-07-04
+P95,T65,D46,follow Chemotherapy,Dr. Latasha Santana,2023-04-07
+P38,T66,D28,follow Dialysis,Dr. Amanda Miller,2023-03-30
+P30,T67,D11,follow Cardiac catheterization,Dr. Carrie Thomas,2024-01-27
+P63,T68,D49,follow Endoscopy,Dr. Michelle Gallagher,2023-02-19
+P05,T69,D03,follow Colonoscopy,Dr. Kenneth Morris,2023-02-16
+P16,T70,D07,follow Lumbar puncture,Dr. Katherine Pugh,2023-11-30
+P82,T71,D15,follow Biopsy,Dr. Joseph Brooks,2024-01-29
+P05,T72,D43,follow Joint injection,Dr. George Weaver,2023-03-06
+P52,T73,D13,follow Dental extraction,Dr. Jessica Brewer,2023-11-27
+P26,T74,D42,follow Root canal,Dr. Michael Tucker,2023-08-11
+P22,T75,D14,follow Eye surgery,Dr. Christian Sanders,2023-09-24
+P10,T76,D23,follow Plastic surgery,Dr. Robert Richardson,2023-06-11
+P74,T77,D15,follow Laser therapy,Dr. Jenny Schultz,2023-06-13
+P88,T78,D37,follow Blood transfusion,Dr. Sandra Mcmahon,2024-01-16
+P40,T79,D01,follow Bone marrow transplant,Dr. Francisco Horton,2024-01-10
+P77,T80,D21,follow Appendectomy,Dr. Jennifer Taylor,2023-08-07
+P23,T81,D19,follow Hernia repair,Dr. David Evans,2023-08-23
+P43,T82,D03,follow Cesarean section,Dr. Larry Dunn,2023-04-01
+P76,T83,D17,follow Vasectomy,Dr. Brandon Larson,2023-09-12
+P08,T84,D20,follow Tonsillectomy,Dr. Linda Garrison,2024-01-28
+P77,T85,D22,follow Appendectomy,Dr. James Dorsey,2023-11-12
+P41,T86,D15,follow Hysterectomy,Dr. Karina Edwards,2024-01-29
+P71,T87,D17,follow Arthroscopy,Dr. Kristen Brown,2024-02-05
+P72,T88,D16,follow Angioplasty,Dr. Linda Hendrix,2023-04-26
+P65,T89,D46,follow Coronary bypass,Dr. Jordan Stokes,2023-06-03
+P05,T90,D39,follow Kidney transplant,Dr. Rebecca Schultz,2023-09-11
+P71,T91,D14,follow Liver transplant,Dr. William Sanchez,2023-12-25
+P53,T92,D14,follow Lung transplant,Dr. Jacob Williams,2023-07-20
+P07,T93,D31,follow Orthopedic surgery,Dr. Nathan Guerrero,2023-05-10
+P24,T94,D15,follow Neurosurgery,Dr. Tamara Delgado,2023-08-19
+P18,T95,D43,follow Urological surgery,Dr. Tami Williams,2023-11-12
+P82,T96,D44,follow Bariatric surgery,Dr. Mary Ellis,2023-02-26
+P19,T97,D43,follow Cataract surgery,Dr. Cheryl Cantrell,2023-07-14
+P02,T98,D06,follow Cosmetic surgery,Dr. Deborah Jones,2023-02-25
+P32,T99,D31,follow Orthodontic treatment,Dr. Robert Scott,2023-03-17
+P76,T100,D40,follow general Dialysis,Dr. Roger Krause,2023-06-04
+P19,T101,D01,step of Physical therapy,Dr. Matthew Watts,2023-09-22
+P77,T102,D08,step of Surgery,Dr. Janet Coleman,2023-06-07
+P32,T103,D26,step of Medication management,Dr. Michael Ellison,2024-02-05
+P24,T104,D41,step of Counseling,Dr. Jacob Whitney,2023-10-04
+P76,T105,D37,step of Diagnostic imaging,Dr. Richard Hanson,2023-09-30
+P82,T106,D18,step of Laboratory tests,Dr. Laura Adams,2023-04-14
+P18,T107,D11,step of Rehabilitation,Dr. Laura Sandoval,2024-02-04
+P57,T108,D31,step of Chiropractic adjustment,Dr. Ryan Rivas,2023-08-10
+P93,T109,D36,step of Massage therapy,Dr. Elijah Scott,2023-03-24
+P82,T110,D01,step of Acupuncture,Dr. Daniel Juarez,2023-05-15
+P38,T111,D15,step of Occupational therapy,Dr. Tiffany Summers,2023-07-18
+P97,T112,D10,step of Speech therapy,Dr. Maria Gill,2023-12-31
+P83,T113,D15,step of Electroconvulsive therapy,Dr. Jorge Howard,2023-11-05
+P22,T114,D25,step of Radiation therapy,Dr. Lauren Oconnell,2023-09-11
+P27,T115,D46,step of Chemotherapy,Dr. Jonathan Harrison,2024-01-03
+P08,T116,D33,step of Dialysis,Dr. Troy Walters,2023-06-05
+P100,T117,D44,step of Cardiac catheterization,Dr. Raymond Henry,2023-09-27
+P74,T118,D47,step of Endoscopy,Dr. Timothy Rodriguez,2023-10-25
+P52,T119,D14,step of Colonoscopy,Dr. Patrick Smith,2023-09-24
+P43,T120,D11,step of Lumbar puncture,Dr. Nicole Pitts,2023-05-18
+P44,T121,D45,step of Biopsy,Dr. Julie May,2023-03-22
+P98,T122,D49,step of Joint injection,Dr. Ryan Miller,2023-07-17
+P45,T123,D50,step of Dental extraction,Dr. Henry Cook,2023-02-18
+P31,T124,D10,step of Root canal,Dr. Steven Solis,2023-07-20
+P34,T125,D29,step of Eye surgery,Dr. Dr. Lauren Simpson,2023-10-22
+P63,T126,D16,step of Plastic surgery,Dr. Brittney Robinson,2023-08-21
+P02,T127,D13,step of Laser therapy,Dr. Ian Martin,2024-01-04
+P20,T128,D30,step of Blood transfusion,Dr. Devin Howell,2023-02-18
+P26,T129,D09,step of Bone marrow transplant,Dr. Joseph Joyce,2023-12-28
+P84,T130,D49,step of Appendectomy,Dr. Debra Walters,2023-09-26
+P49,T131,D02,step of Hernia repair,Dr. Mitchell Moody,2023-10-08
+P82,T132,D36,step of Cesarean section,Dr. Scott Velazquez,2023-08-23
+P32,T133,D26,step of Vasectomy,Dr. William Harris,2023-03-09
+P82,T134,D06,step of Tonsillectomy,Dr. Stephen Davis,2023-11-20
+P19,T135,D08,step of Appendectomy,Dr. James Howard,2024-01-29
+P63,T136,D01,step of Hysterectomy,Dr. Miss Alison Morrow,2023-05-19
+P83,T137,D43,step of Arthroscopy,Dr. Jill Baldwin,2023-10-25
+P75,T138,D26,step of Angioplasty,Dr. Samantha Hancock,2023-07-10
+P06,T139,D04,step of Coronary bypass,Dr. John Long,2023-12-12
+P68,T140,D50,step of Kidney transplant,Dr. Nicholas Nelson,2023-07-26
+P09,T141,D47,step of Liver transplant,Dr. James Lowery,2023-09-17
+P55,T142,D11,step of Lung transplant,Dr. Jasmine Wheeler,2023-07-02
+P01,T143,D40,step of Orthopedic surgery,Dr. Darryl Gilbert,2023-12-31
+P09,T144,D19,step of Neurosurgery,Dr. Dillon Potter Jr.,2023-11-02
+P11,T145,D23,step of Urological surgery,Dr. Keith Hall,2023-12-27
+P03,T146,D14,step of Bariatric surgery,Dr. Lori Hines,2023-03-18
+P84,T147,D28,step of Cataract surgery,Dr. Joseph Mccarthy,2023-03-19
+P63,T148,D04,step of Cosmetic surgery,Dr. Chelsea Garcia,2023-10-16
+P58,T149,D26,step of Orthodontic treatment,Dr. Nicole Fry,2023-09-24
+P90,T150,D17,step of general Dialysis,Dr. Kayla Crane,2023-07-04

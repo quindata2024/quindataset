@@ -1,0 +1,21 @@
+department_id,name,location,manager_id
+D01,Marketing,Hallmouth,E075
+D02,Sales,Huffshire,E418
+D03,Finance,Laurahaven,E623
+D04,HR,Brittneyton,E921
+D05,IT,Lyonsburgh,E481
+D06,Engineering,Burkeburgh,E513
+D07,Customer Service,Tamarastad,E057
+D08,Legal,Archermouth,E944
+D09,Product,Russellchester,E114
+D10,Operations,East Thomas,E647
+D11,Research & Development,Mathewsville,E764
+D12,Accounting,Nelsonville,E453
+D13,Administration,Paulton,E723
+D14,Executive,North Sheliashire,E731
+D15,Quality Assurance,Bennettfort,E353
+D16,Security,Thomasville,E293
+D17,Facilities,Averymouth,E542
+D18,Training,Stefaniemouth,E372
+D19,Finance,Kayleechester,E469
+D20,Transversal,Craigville,E167

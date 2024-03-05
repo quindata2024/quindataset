@@ -1,0 +1,21 @@
+course_id,name,subject
+CS01,Statistics,Math
+CS02,Algebra,Math
+CS03,Geometry,Math
+CS04,Calculus,Math
+CS05,Number Theory,Math
+CS06,Biology,Science
+CS07,Chemistry,Science
+CS08,Physics,Science
+CS09,Geology,Science
+CS10,Astronomy,Science
+CS11,Literature,English
+CS12,Grammar,English
+CS13,Writing,English
+CS14,Composition,English
+CS15,Poetry,English
+CS16,World History,History
+CS17,US History,History
+CS18,European History,History
+CS19,Ancient History,History
+CS20,Modern History,History

@@ -1,0 +1,101 @@
+vehicle_id,type,capacity,model
+V001,Airplane,140,Bombardier Dash 8
+V002,Car,4,Toyota Camry
+V003,Train,418,Kawasaki N700 Series Shinkansen
+V004,Car,2,Mercedes-Benz C-Class
+V005,Bus,70,Irizar i8
+V006,Car,4,Chevrolet Silverado
+V007,Bus,63,BYD K9
+V008,Car,2,Toyota Camry
+V009,Car,4,Toyota Camry
+V010,Car,3,Ford F-150
+V011,Train,635,Talgo Avril
+V012,Car,3,Chevrolet Silverado
+V013,Train,442,Alstom Coradia
+V014,Train,800,Kawasaki N700 Series Shinkansen
+V015,Car,3,Ford F-150
+V016,Train,745,Alstom Coradia
+V017,Car,4,Volkswagen Jetta
+V018,Airplane,112,Airbus A320
+V019,Bus,65,MAN Lion's City
+V020,Car,2,Tesla Model S
+V021,Bus,62,MAN Lion's City
+V022,Airplane,208,Bombardier Dash 8
+V023,Car,5,Mercedes-Benz C-Class
+V024,Airplane,205,Embraer E-Jet
+V025,Airplane,158,Boeing 737
+V026,Train,920,CRRC Qingdao Sifang
+V027,Bus,51,New Flyer Xcelsior
+V028,Airplane,136,Boeing 737
+V029,Bus,32,Scania Citywide
+V030,Airplane,113,Boeing 747
+V031,Car,4,Chevrolet Silverado
+V032,Train,973,Alstom Coradia
+V033,Bus,69,MAN Lion's City
+V034,Airplane,114,Boeing 777
+V035,Car,2,Volkswagen Jetta
+V036,Car,4,Tesla Model S
+V037,Airplane,185,Airbus A320
+V038,Car,2,Audi A4
+V039,Car,4,BMW 3 Series
+V040,Train,1000,Kawasaki N700 Series Shinkansen
+V041,Train,870,AnsaldoBreda Trenitalia Frecciargento
+V042,Car,5,Volkswagen Jetta
+V043,Bus,55,Blue Bird Vision
+V044,Train,777,Alstom Coradia
+V045,Train,994,CRRC Qingdao Sifang
+V046,Train,988,Talgo Avril
+V047,Bus,67,Scania Citywide
+V048,Airplane,155,Bombardier CRJ Series
+V049,Car,4,BMW 3 Series
+V050,Airplane,258,Boeing 787 Dreamliner
+V051,Train,615,CRRC Qingdao Sifang
+V052,Train,309,CRRC Qingdao Sifang
+V053,Train,383,Siemens Velaro
+V054,Car,5,Volkswagen Jetta
+V055,Bus,34,Gillig Low Floor
+V056,Bus,57,Volvo 9700
+V057,Train,851,Kawasaki N700 Series Shinkansen
+V058,Airplane,188,Airbus A350 XWB
+V059,Train,471,CAF Oaris
+V060,Bus,54,BYD K9
+V061,Train,863,CRRC Qingdao Sifang
+V062,Bus,37,Volvo 9700
+V063,Car,2,Toyota Camry
+V064,Car,4,BMW 3 Series
+V065,Bus,61,Blue Bird Vision
+V066,Bus,53,New Flyer Xcelsior
+V067,Airplane,99,Airbus A320
+V068,Car,3,Audi A4
+V069,Train,491,Hitachi A-Train
+V070,Bus,56,MAN Lion's City
+V071,Bus,49,New Flyer Xcelsior
+V072,Airplane,141,Boeing 787 Dreamliner
+V073,Car,5,Volkswagen Jetta
+V074,Car,5,Toyota Camry
+V075,Train,981,CRRC Qingdao Sifang
+V076,Bus,41,Gillig Low Floor
+V077,Train,480,CRRC Qingdao Sifang
+V078,Airplane,159,Embraer E-Jet
+V079,Bus,47,Scania Citywide
+V080,Car,3,Chevrolet Silverado
+V081,Airplane,272,Boeing 737
+V082,Bus,47,MAN Lion's City
+V083,Car,2,Nissan Altima
+V084,Train,774,Hitachi A-Train
+V085,Car,2,BMW 3 Series
+V086,Airplane,184,Boeing 777
+V087,Car,2,Audi A4
+V088,Bus,68,Volvo 9700
+V089,Car,5,Tesla Model S
+V090,Train,438,Siemens Velaro
+V091,Bus,68,Blue Bird Vision
+V092,Bus,53,New Flyer Xcelsior
+V093,Car,4,Ford F-150
+V094,Car,2,Toyota Camry
+V095,Airplane,126,Boeing 747
+V096,Train,527,Talgo Avril
+V097,Train,655,Kawasaki N700 Series Shinkansen
+V098,Car,5,Chevrolet Silverado
+V099,Train,798,Alstom Coradia
+V100,Bus,67,Gillig Low Floor
